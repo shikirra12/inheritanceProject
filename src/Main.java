@@ -4,12 +4,15 @@ public class Main {
     TextNotification myText = new TextNotification("OMW", "Are you at Starbucks?", "Bern", "AT&T");
 
 
+        myEmail.transport();
+        myText.transport();
+        myText.showStatus();
+        myEmail.showStatus();
+        myEmail.someMethod();
+
+
         Object emailNotificationClone = myEmail.clone();
         emailNotificationClone.equals(myEmail);
-//    myEmail.transport();
-//    myText.transport();
-//    myText.showStatus();
-//    myEmail.showStatus();
-//    myEmail.someMethod();
+        System.out.println("Your clone: " + emailNotificationClone.equals(myEmail));
     }
 }
