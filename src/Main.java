@@ -13,6 +13,6 @@ public class Main {
 
         Object emailNotificationClone = myEmail.clone();
         emailNotificationClone.equals(myEmail);
-        System.out.println("Your clone: " + emailNotificationClone.equals(myEmail));
+        System.out.println("Is clone similiar to myEmail: " + emailNotificationClone.equals(myEmail));
     }
 }
